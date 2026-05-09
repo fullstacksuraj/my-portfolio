@@ -1,0 +1,366 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+#about.content {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Left Side */
+.about-leftSide h3 {
+  font-size: 3rem;
+  color: var(--green);
+}
+
+.about-leftSide p {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+/* =========================
+   TABS
+========================= */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tabs a {
+  width: 100%;
+  padding: 1.5rem;
+  border: 0.2rem solid var(--disabled);
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+/* Hover + Active */
+.tabs a:hover,
+.tabs a.active {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+/* =========================
+   RIGHT SIDE CONTENT
+========================= */
+.rightSide {
+  display: none;
+}
+
+.rightSide.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSide p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Common Heading */
+h2.heading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   COMMON SCROLL BOX
+========================= */
+.my-info,
+.skills-info,
+.experience-info,
+.education-info {
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--green) transparent;
+}
+
+/* =========================
+   PERSONAL INFO
+========================= */
+.my-info {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--disabled);
+}
+
+.info-box span {
+  padding: 1rem;
+}
+
+.info-box span:first-child {
+  min-width: 12rem;
+  color: var(--green);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.info-box span:last-child {
+  flex: 1;
+  font-size: 2rem;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skills-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.skill-box {
+  height: 15rem;
+  background: var(--disabled);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Skill Hover */
+.skill-box:hover {
+  box-shadow: 0 0 10px var(--green);
+}
+
+.skill-box i {
+  font-size: 5rem;
+  color: var(--green);
+  transition: 0.3s;
+}
+
+.skill-box:hover i {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.skill-box span {
+  font-size: 2rem;
+}
+
+/* =========================
+   EXPERIENCE & EDUCATION
+========================= */
+.experience-info,
+.education-info {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Common Card */
+.experience-box,
+.education-box {
+  background: var(--secondary);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.experience-box:hover,
+.education-box:hover {
+  box-shadow: 0 0 10px var(--green);
+}
+
+/* Titles */
+.experience-box h3,
+.education-box h3 {
+  font-size: 2rem;
+  color: var(--green);
+}
+
+.experience-box h4,
+.education-box h4 {
+  font-size: 1.4rem;
+}
+
+/* List Items */
+.experience-box ul,
+.education-box ul {
+  padding-left: 1.5rem;
+}
+.experience-box li,
+.education-box li {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-left: 1.2rem;
+  list-style: disc;
+}
+
+/* Education Icon */
+.education-box h3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.education-box h3 i {
+  font-size: 2.5rem;
+  color: var(--green);
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (min-width: 768px) {
+  /* About Layout */
+  #about.content {
+    gap: 4rem;
+  }
+
+  /* Tabs */
+  .tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tabs a {
+    width: auto;
+    padding: 1rem 2rem;
+  }
+
+  /* Heading */
+  h2.heading {
+    font-size: 4rem;
+  }
+
+  /* Personal Info */
+  .my-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Skills */
+  .skills-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skill-box {
+    height: 18rem;
+  }
+
+  .skill-box i {
+    font-size: 6rem;
+  }
+
+  /* Experience & Education */
+  .experience-box,
+  .education-box {
+    padding: 2rem;
+  }
+}
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width: 1024px) {
+  /* Main Layout */
+  #about.content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  /* Left Side */
+  .about-leftSide {
+    flex: 1;
+  }
+  .about-leftSide .tabs {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about-leftSide .tabs a {
+    width: auto;
+  }
+
+  /* Right Side */
+  .rightSide {
+    flex: 1.3;
+  }
+  .rightSide p {
+    font-size: 1.5rem;
+  }
+  /* Heading */
+  h2.heading {
+    font-size: 5rem;
+  }
+  /* Skills */
+  .skills-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Bigger Scroll Area */
+  .my-info,
+  .skills-info,
+  .experience-info,
+  .education-info {
+    max-height: 400px;
+  }
+  .experience-box ul li,
+  .education-box ul li {
+    font-size: 1.4rem;
+  }
+}
+
+/* =========================
+   LARGE SCREEN
+========================= */
+@media (min-width: 1440px) {
+  #about.content {
+    align-items: center;
+    gap: 6rem;
+  }
+
+  /* Main Wrapper */
+  .main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Bigger Text */
+  .about-leftSide h3 {
+    font-size: 6rem;
+  }
+
+  .about-leftSide p,
+  .rightSide p {
+    font-size: 1.8rem;
+  }
+  .about-leftSide .tabs a {
+    font-size: 2rem;
+  }
+  .my-info,
+  .skills-info,
+  .experience-info,
+  .education-info {
+    padding: 2rem;
+  }
+  /* Skills */
+  .skills-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skill-box {
+    height: 20rem;
+  }
+
+  .skill-box i {
+    font-size: 7rem;
+  }
+}

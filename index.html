@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- 🔹 Basic Setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raj Portfolio</title>
+    <!-- 🔹 Favicon -->
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon" />
+    <!-- 🔹 CSS Files -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/devDoc.css" />
+
+    <!-- 🔹 Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <!--  HEADER / NAVBAR START -->
+      <header>
+        <div class="brand-info">
+          <img src="./image/logo.png" alt="Profile Image" />
+          <h2>Portfolio</h2>
+        </div>
+        <!--  Mobile Menu Button -->
+        <div class="hamburger-menu" id="menuBtn">
+          <i class="menu-icon fa-solid fa-bars"></i>
+        </div>
+        <!--  Navigation Links -->
+        <nav id="navMenu">
+          <a href="#" style="--i: 1" data-tab="home" class="navlink active">
+            Home</a
+          >
+          <a href="#" style="--i: 2" data-tab="services" class="navlink">
+            Services</a
+          >
+          <a href="#" style="--i: 3" data-tab="about" class="navlink"> About</a>
+
+          <a href="#" style="--i: 4" data-tab="projects" class="navlink">
+            Project</a
+          >
+          <a href="#" style="--i: 5" data-tab="devDocs" class="navlink">
+            Dev Docs</a
+          >
+          <a href="#" style="--i: 6" data-tab="contact" class="navlink">
+            Contact</a
+          >
+        </nav>
+      </header>
+      <!--  HEADER / NAVBAR END -->
+      <!--  HOME SECTION START-->
+      <div id="home" class="content active">
+        <div class="details">
+          <h2 class="heading"><span>Coding</span> Suraj</h2>
+          <!-- ?? Typing Effect -->
+          <h3>
+            i ' am
+            <span id="typing-span"></span>
+          </h3>
+          <p>
+            I'm a self-motivated aspiring Full Stack Developer with a strong
+            foundation in HTML, CSS, and JavaScript. I enjoy solving real-world
+            problems through code and continuously improving my skills by
+            building projects. Currently, I'm learning advanced technologies
+            like React and backend development to become a complete developer.
+          </p>
+          <!--  Social + Button -->
+          <div class="bottom">
+            <button>Download CV</button>
+
+            <div class="social-icons">
+              <a href="https://github.com/" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a href="https://linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a href="mailto:yourmail@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+
+              <a href="https://instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--  Profile Image -->
+        <div class="img-container">
+          <img src="./image/dp.jpeg" alt="myProfileDp" />
+        </div>
+      </div>
+
+      <!--  HOME SECTION END-->
+      <!--  SERVICES SECTION START-->
+      <section id="services" class="content">
+        <h2 class="heading"><span>My Services</span></h2>
+        <div class="services-container">
+          <div class="service-card">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-code"></i>
+                <h3>Website Development</h3>
+              </div>
+
+              <p>
+                I create fast, responsive, and modern websites using the latest
+                technologies to deliver high performance and great user
+                experience.
+              </p>
+
+              <a href="#" class="btn">View Details</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Frontend Development</h3>
+              </div>
+
+              <p>
+                Creating interactive, pixel-perfect UI with smooth animations
+                and great user experience.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-pencil-ruler"></i>
+                <h3>UI/UX Design</h3>
+              </div>
+
+              <p>
+                Designing clean, modern, and user-friendly interfaces that
+                improve engagement.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-chart-line"></i>
+                <h3>SEO Optimization</h3>
+              </div>
+
+              <p>
+                Boost your website ranking with SEO-friendly structure and fast
+                performance.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-database"></i>
+                <h3>Web App Development</h3>
+              </div>
+
+              <p>
+                Building dynamic and scalable web applications using MERN stack
+                technologies.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="inner">
+              <div class="icon">
+                <i class="fas fa-handshake"></i>
+                <h3>Freelance Support</h3>
+              </div>
+
+              <p>
+                End-to-end project support from idea to deployment with quality
+                delivery.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  SERVICES SECTION END-->
+      <!--  ABOUT SECTION -->
+      <section id="about" class="content">
+        <!--  LEFT SIDE (Tabs + Intro) -->
+        <div class="about-leftSide">
+          <h3>Why Hire Me?</h3>
+          <p>
+            I’m a passionate MERN stack developer who turns complex ideas into
+            simple, effective solutions. I deliver high-quality websites with
+            clean code, modern design, and strong performance. Along with
+            development, I provide clear communication, reliable support, and
+            complete dedication to every project.
+          </p>
+          <!--  Tabs Navigation -->
+          <div class="tabs">
+            <a href="#" data-tab="aboutMe" class="tabLinks active">About Me</a>
+            <a href="#" data-tab="skills" class="tabLinks">Skills</a>
+            <a href="#" data-tab="experience" class="tabLinks">Experience</a>
+            <a href="#" data-tab="education" class="tabLinks">Education</a>
+          </div>
+        </div>
+        <!--  ABOUT ME TAB -->
+        <div id="aboutMe" class="rightSide show">
+          <h2 class="heading"><span>About Me</span></h2>
+          <p>
+            I help businesses and individuals turn their ideas into powerful,
+            scalable web solutions. With a strong focus on performance, design,
+            and user experience, I deliver websites and applications that drive
+            real results. My goal is to provide reliable, efficient, and
+            future-ready digital solutions with complete dedication.
+          </p>
+          <!--  Personal Info -->
+          <div class="my-info">
+            <div class="info-box">
+              <span>Name</span>
+              <span>:</span>
+              <span>Coding Suraj</span>
+            </div>
+            <!-- more info -->
+            <div class="info-box">
+              <span>Country</span>
+              <span>:</span>
+              <span>India</span>
+            </div>
+            <div class="info-box">
+              <span>Industry </span>
+              <span>:</span>
+              <span>Software & IT</span>
+            </div>
+            <div class="info-box">
+              <span>Experience </span>
+              <span>:</span>
+              <span>2+ Year's</span>
+            </div>
+            <div class="info-box">
+              <span>Location</span>
+              <span>:</span>
+              <span>Ara Bihar</span>
+            </div>
+          </div>
+        </div>
+        <!--  SKILLS TAB -->
+        <div id="skills" class="rightSide">
+          <h2 class="heading"><span>My Skills</span></h2>
+          <p>
+            I bring a solid foundation in modern web technologies, enabling me
+            to design and develop fast, scalable, and user-centric applications.
+            My approach combines clean code, performance optimization, and
+            intuitive UI/UX to deliver reliable and impactful digital solutions.
+          </p>
+          <!--  Skills Grid -->
+          <div class="skills-info">
+            <div class="skill-box">
+              <i class="fab fa-html5"></i>
+              <span>HTML</span>
+            </div>
+            <!-- more skills -->
+            <div class="skill-box">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS</span>
+            </div>
+            <div class="skill-box">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-box">
+              <i class="fab fa-react"></i>
+              <span>REACT</span>
+            </div>
+            <div class="skill-box">
+              <i class="fas fa-wind"></i>
+              <span>WIND</span>
+            </div>
+            <div class="skill-box">
+              <i class="fab fa-node-js"></i>
+              <span>NODE JS</span>
+            </div>
+            <div class="skill-box">
+              <i class="fas fa-server"></i>
+              <span>SERVER</span>
+            </div>
+            <div class="skill-box">
+              <i class="fas fa-database"></i>
+              <span>MONGO DB</span>
+            </div>
+            <div class="skill-box">
+              <i class="fas fa-plug"></i>
+              <span>PLUGIN</span>
+            </div>
+          </div>
+        </div>
+        <!--  EXPERIENCE TAB -->
+        <div id="experience" class="rightSide">
+          <h2 class="heading"><span>My Experience</span></h2>
+
+          <p>
+            Here are some real-world projects I’ve built to demonstrate my
+            skills, problem-solving ability, and practical knowledge in web
+            development.
+          </p>
+
+          <div class="experience-info">
+            <!-- Project 1 -->
+            <div class="experience-box">
+              <h3>Portfolio Website</h3>
+              <h4>Personal Project | 2024</h4>
+
+              <ul>
+                <li>
+                  Designed and developed a fully responsive portfolio using
+                  HTML, CSS, and JavaScript
+                </li>
+                <li>Implemented smooth animations and modern UI</li>
+                <li>Optimized performance and user experience</li>
+              </ul>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="experience-box">
+              <h3>Full Stack Web App (MERN)</h3>
+              <h4>Personal Project | 2024</h4>
+
+              <ul>
+                <li>
+                  Built a dynamic web application using MongoDB, Express, React,
+                  and Node.js
+                </li>
+                <li>Implemented authentication and REST APIs</li>
+                <li>Handled database integration and scalability</li>
+              </ul>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="experience-box">
+              <h3>Freelance Practice Projects</h3>
+              <h4>Self Learning | 2023 - Present</h4>
+
+              <ul>
+                <li>
+                  Developed multiple websites for practice and real-world
+                  scenarios
+                </li>
+                <li>
+                  Focused on responsive design and performance optimization
+                </li>
+                <li>Continuously improving through hands-on projects</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--  EDUCATION TAB -->
+        <div id="education" class="rightSide">
+          <div class="education-deatils">
+            <!--  Education Heading -->
+            <h2 class="heading"><span>My Education</span></h2>
+
+            <p>
+              Here are my educational qualifications that have built a strong
+              foundation in technology, problem-solving, and continuous learning
+              in web development.
+            </p>
+          </div>
+          <!--  Education Cards -->
+          <div class="education-info">
+            <!-- Education 1 -->
+            <div class="education-box">
+              <h3>
+                <i class="fas fa-graduation-cap"></i> Bachelor of Science (B.Sc)
+              </h3>
+              <h4>Veer Kunwar Singh University, Ara | 2014 – 2018</h4>
+
+              <ul>
+                <li>
+                  Studied core subjects like Data Structures, Web Development,
+                  and Operating Systems
+                </li>
+                <li>
+                  Built academic projects using JavaScript and modern
+                  technologies
+                </li>
+                <li>Developed strong analytical and problem-solving skills</li>
+              </ul>
+            </div>
+
+            <!-- Education 2 -->
+            <div class="education-box">
+              <h3>
+                <i class="fas fa-graduation-cap"></i>Higher Secondary Education
+                (Science)
+              </h3>
+              <h4>P.B.P Singh College, Rohtas | 2012 – 2014</h4>
+
+              <ul>
+                <li>Focused on Physics, Chemistry, and Mathematics</li>
+                <li>Built a strong foundation in logical thinking</li>
+              </ul>
+            </div>
+
+            <!-- Education 3 -->
+            <div class="education-box">
+              <h3>
+                <i class="fas fa-graduation-cap"></i>Secondary School
+                Certificate (10th)
+              </h3>
+              <h4>BSEB, Patna | 2012</h4>
+
+              <ul>
+                <li>Completed schooling with distinction</li>
+                <li>Participated in computer-related activities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  PROJECTS SECTION -->
+      <section id="projects" class="content">projects</section>
+      <!--  Dev Docs SECTION -->
+
+      <!-- ========================= -->
+      <!-- DEV DOCS SECTION -->
+      <!-- ========================= -->
+
+      <section id="devDocs" class="content">
+        <!-- INTRO -->
+
+        <div class="devInfo">
+          <h2 class="section-title">Developer Documentation</h2>
+
+          <p class="section-subtitle">
+            Personal knowledge base, coding notes, cheatsheets and developer
+            resources.
+          </p>
+        </div>
+
+        <!-- SEARCH BAR -->
+
+        <div class="search-box">
+          <input type="text" placeholder="Search documentation..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- QUICK ACCESS -->
+
+        <div class="quick-access">
+          <h3 class="small-title">Quick Access</h3>
+
+          <div class="quick-links">
+            <a href="#">Git Push</a>
+            <a href="#">Flexbox</a>
+            <a href="#">DOM</a>
+            <a href="#">Media Query</a>
+            <a href="#">Array Methods</a>
+          </div>
+        </div>
+
+        <!-- DOCUMENTATION CARDS -->
+
+        <div class="docs-container">
+          <!-- HTML -->
+
+          <a href="/Developer Notes/html-notes.html" class="doc-card">
+            <i class="fa-brands fa-html5"></i>
+
+            <h3>HTML5 Notes</h3>
+
+            <p>Tags, forms, tables, semantic elements and boilerplate.</p>
+
+            <span>Documentation</span>
+          </a>
+
+          <!-- CSS -->
+
+          <a href="pages/css-notes.html" class="doc-card">
+            <i class="fa-brands fa-css3-alt"></i>
+
+            <h3>CSS3 Notes</h3>
+
+            <p>Flexbox, grid, animation, responsive design and layouts.</p>
+
+            <span>Documentation</span>
+          </a>
+
+          <!-- JAVASCRIPT -->
+
+          <a href="pages/javascript-notes.html" class="doc-card">
+            <i class="fa-brands fa-js"></i>
+
+            <h3>JavaScript Notes</h3>
+
+            <p>Variables, arrays, functions, DOM and events.</p>
+
+            <span>Documentation</span>
+          </a>
+
+          <!-- GIT -->
+
+          <a href="pages/git-notes.html" class="doc-card">
+            <i class="fa-brands fa-git-alt"></i>
+
+            <h3>Git Notes</h3>
+
+            <p>Git commands, commits, branches and workflow.</p>
+
+            <span>Documentation</span>
+          </a>
+
+          <!-- GITHUB -->
+
+          <a href="pages/github-notes.html" class="doc-card">
+            <i class="fa-brands fa-github"></i>
+
+            <h3>GitHub Notes</h3>
+
+            <p>Repository, push, pull, clone and deployment guide.</p>
+
+            <span>Documentation</span>
+          </a>
+        </div>
+      </section>
+
+      <!--  CONTACT SECTION -->
+      <section id="contact" class="content">
+        <div class="contact-leftSide">
+          <h1 class="heading">Let's Work <span>Together</span></h1>
+
+          <p>
+            Have a project in mind or just want to say hello? Feel free to reach
+            out anytime. I'm always open to discussing new ideas,
+            collaborations, or opportunities!
+          </p>
+          <div class="contact-info">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong> Phone :</strong>
+                <span>+91 9661969028</span>
+              </div>
+            </div>
+            <div class="contact">
+              <i class="fa-solid fa-message"></i>
+              <div>
+                <strong> Email :</strong><span>rajkumar96.work@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <div>
+                <strong> Country :</strong>
+                <span>India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-rightSide">
+          <form id="contactForm">
+            <h2><span>Contact</span> Me !</h2>
+            <label for="name">Name :</label>
+            <input
+              name="name"
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email">Email :</label>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="tel">Phone :</label>
+            <input
+              name="tel"
+              id="tel"
+              type="tel"
+              placeholder="+91 XXXXX XXXXX"
+              required
+            />
+
+            <label for="msg">Message :</label>
+            <textarea
+              rows="6"
+              placeholder="Write your message..."
+              id="msg"
+              name="message"
+              required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

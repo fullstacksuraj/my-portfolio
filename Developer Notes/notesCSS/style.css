@@ -1,0 +1,62 @@
+/* ========================= */
+/* GOOGLE FONT */
+/* ========================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ========================= */
+/* ROOT */
+/* ========================= */
+
+:root {
+  /* Main Colors */
+  --primary: #030a16;
+  --secondary: #323946;
+
+  /* Backgrounds */
+  --bg-color: #030a16;
+  --sidebar: #161b22;
+  --card-bg: #323946;
+
+  /* Text Colors */
+  --white: #ffffff;
+  --text: #ffffff;
+  --text-light: #b8b8b8;
+  --gray: #808080;
+  --light: #ffffff7c;
+
+  /* Accent */
+  --green: #7cf03d;
+
+  /* Borders & Disabled */
+  --border: rgba(255, 255, 255, 0.08);
+  --disabled: rgba(255, 255, 255, 0.2);
+}
+
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}

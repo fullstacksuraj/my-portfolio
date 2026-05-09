@@ -1,0 +1,385 @@
+#devDocs.content {
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100dvh;
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* HEADER */
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: rgba(3, 10, 22, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+/* TITLE */
+#devDocs .devInfo {
+  width: 100%;
+}
+#devDocs .devInfo .section-title {
+  font-size: 2.8rem;
+  background: linear-gradient(to right, var(--white), var(--green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+}
+.devInfo .section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 0.4rem;
+  width: 100%;
+  background: linear-gradient(to right, var(--white), var(--green));
+  border-radius: 0.2rem;
+}
+.devInfo .section-subtitle {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+#devDocs .search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.search-box input[type="text"] {
+  font-size: 1.8rem;
+  padding: 1rem 0.5rem;
+  height: 4.5rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  background: var(--disabled);
+  outline: none;
+  border: 1px solid transparent;
+  color: var(--white);
+  padding: 1rem 5rem 1rem 1.5rem;
+  transition: all 0.3s ease;
+}
+.search-box input[type="text"]:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 10px var(--green);
+}
+.search-box i {
+  font-size: 2.2rem;
+  position: absolute;
+  right: 0;
+  height: 4.5rem;
+  width: 4.5rem;
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-left: 1px solid var(--disabled);
+}
+#devDocs .quick-access {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.quick-access .small-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.quick-access .quick-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.quick-links a {
+  font-size: 1.3rem;
+  background: var(--green);
+  padding: 0.5rem 1.4rem;
+  color: var(--primary);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+.quick-links a:hover {
+  background: transparent;
+  color: var(--green);
+  border-color: var(--green);
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(124, 240, 61, 0.4);
+}
+#devDocs .docs-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.docs-container a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  will-change: transform;
+}
+.docs-container a:hover {
+  transform: translateY(-5px) scale(1.02);
+  border-color: var(--green);
+  box-shadow: 0 0 15px var(--green);
+}
+.docs-container a i {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  color: var(--green);
+  transition: 0.3s ease;
+}
+.docs-container a:hover i {
+  transform: scale(1.1) rotate(10deg);
+  text-shadow: 0 0 15px var(--primary);
+}
+.docs-container a h3 {
+  font-size: 2rem;
+}
+.docs-container a p {
+  font-size: 1.6rem;
+  text-align: center;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+.docs-container a span {
+  font-size: 1.3rem;
+  margin-block: 1rem;
+}
+
+//* =========================
+   TABLET
+========================= */
+@media (min-width: 425px) and (max-width: 768px) {
+  #devDocs.content {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  #devDocs .devInfo .section-title {
+    font-size: 4rem;
+  }
+
+  .devInfo .section-subtitle {
+    font-size: 2rem;
+  }
+
+  .quick-access .small-title {
+    font-size: 2.6rem;
+  }
+
+  .quick-links a {
+    font-size: 1.5rem;
+    padding: 0.7rem 1.5rem;
+  }
+
+  #devDocs .docs-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .docs-container a {
+    padding: 2.5rem 2rem;
+  }
+
+  .docs-container a i {
+    font-size: 6.5rem;
+  }
+
+  .docs-container a h3 {
+    font-size: 2.1rem;
+  }
+
+  .docs-container a p {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .docs-container a span {
+    font-size: 1.5rem;
+  }
+}
+
+/* =========================
+   SMALL LAPTOP
+========================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #devDocs.content {
+    padding: 3rem;
+  }
+
+  #devDocs .devInfo .section-title {
+    font-size: 4.5rem;
+  }
+
+  .devInfo .section-subtitle {
+    font-size: 2rem;
+  }
+
+  .quick-access .small-title {
+    font-size: 2.5rem;
+  }
+
+  .quick-access .quick-links {
+    justify-content: center;
+  }
+.quick-links{
+  margin-block: 1rem;
+  padding-block: 2rem;
+}
+  .quick-links a {
+    font-size: 1.5rem;
+  }
+
+  #devDocs .docs-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .docs-container a {
+    padding: 3rem 2rem;
+  }
+
+  .docs-container a i {
+    font-size: 6.5rem;
+  }
+
+  .docs-container a h3 {
+    font-size: 2.2rem;
+  }
+
+  .docs-container a p {
+    font-size: 1.7rem;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  #devDocs.content {
+    padding: 4rem;
+  }
+
+  #devDocs .devInfo .section-title {
+    font-size: 5rem;
+  }
+
+  .devInfo .section-subtitle {
+    font-size: 2.1rem;
+  }
+
+  .quick-access .small-title {
+    font-size: 2.6rem;
+  }
+
+  .quick-access .quick-links {
+    justify-content: center;
+  }
+.quick-links{
+  margin-block: 1rem;
+  padding-block: 2rem;
+}
+  .quick-links a {
+    font-size: 1.5rem;
+  }
+
+  #devDocs .docs-container {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+  }
+
+  .docs-container a {
+    padding: 3rem 2.5rem;
+  }
+
+  .docs-container a i {
+    font-size: 7rem;
+  }
+
+  .docs-container a h3 {
+    font-size: 2.3rem;
+  }
+
+  .docs-container a p {
+    font-size: 1.8rem;
+  }
+
+  .docs-container a span {
+    font-size: 1.5rem;
+  }
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+@media (min-width: 1440px) {
+  #devDocs.content {
+    padding: 5rem 6rem;
+  }
+
+  #devDocs .devInfo .section-title {
+    font-size: 6rem;
+  }
+
+  .devInfo .section-subtitle {
+    font-size: 2.3rem;
+  }
+
+  .quick-access .small-title {
+    font-size: 3rem;
+  }
+.quick-links{
+  margin-block: 2rem;
+  padding-block: 2rem;
+}
+  .quick-links a {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.8rem;
+  }
+
+  #devDocs .docs-container {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 3rem;
+  }
+
+  .docs-container a {
+    padding: 3.5rem 3rem;
+  }
+
+  .docs-container a i {
+    font-size: 7.5rem;
+  }
+
+  .docs-container a h3 {
+    font-size: 2.5rem;
+  }
+
+  .docs-container a p {
+    font-size: 1.9rem;
+  }
+
+  .docs-container a span {
+    font-size: 1.6rem;
+  }
+}

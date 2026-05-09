@@ -1,0 +1,221 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap");
+
+:root {
+  --primary: #030a16;
+  --secondary: #323946;
+  --disabled: rgba(255, 255, 255, 0.2);
+  --green: #7cf03d;
+  --white: #ffffff;
+  --gray: #808080;
+  --light: #ffffff7c;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--primary);
+  color: var(--white);
+  min-height: 100dvh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* LAYOUT */
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10rem;
+  border-bottom: 0.3rem solid var(--disabled);
+  position: relative;
+}
+
+.brand-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-info h2 {
+  font-size: 3rem;
+}
+
+.brand-info img {
+  width: 7rem;
+  border-radius: 50%;
+}
+
+.hamburger-menu i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* MOBILE MENU */
+#navMenu {
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background: color-mix(in srgb, var(--primary) 80%, transparent);
+  transition: left 0.4s ease;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+#navMenu.active {
+  left: 0;
+  height: calc(100vh - 10rem);
+}
+
+/* NAV LINKS */
+#navMenu a {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0.2rem solid var(--disabled);
+  border-radius: 1rem;
+  width: 85%;
+  text-align: center;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* ANIMATION ONLY WHEN ACTIVE */
+#navMenu.active a {
+  animation: navFade 0.4s ease forwards;
+  animation-delay: calc(var(--i) * 0.1s);
+  z-index: 1000;
+}
+
+@keyframes navFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#navMenu a:hover,
+#navMenu a.active {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  header {
+    padding: 1rem 2rem;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .main-container {
+    padding: 0 2rem;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  #navMenu {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    left: 0;
+    width: auto;
+  }
+
+  #navMenu a {
+    font-size: 1.6rem;
+    border: none;
+    width: auto;
+    padding: 0;
+    opacity: 1;
+    transform: none;
+    position: relative;
+  }
+
+  #navMenu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.4rem;
+    width: 0%;
+    height: 0.2rem;
+    background: var(--green);
+    transition: width 0.3s ease;
+  }
+
+  #navMenu a:hover::after,
+  #navMenu a.active::after {
+    width: 100%;
+  }
+}
+
+/* LARGE SCREEN */
+@media (min-width: 1400px) {
+  .main-container {
+    max-width: 1400px;
+  }
+
+  #navMenu a {
+    font-size: 2rem;
+  }
+  .brand-info img {
+    max-width: 10rem;
+  }
+}
