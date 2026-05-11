@@ -22,30 +22,130 @@
         <aside class="sidebar">
           <h2 class="logo">HTML5 Docs</h2>
           <nav>
-            <a href="#boilerplate"> Boilerplate </a>
+            <a href="#boilerplate" data-tab="boilerplate" class="link active">
+              Boilerplate
+            </a>
 
-            <a href="#headings"> Headings </a>
+            <a href="#headings" data-tab="headings" class="link"> Headings </a>
 
-            <a href="#paragraph"> Paragraph </a>
+            <a href="#paragraph" data-tab="paragraph" class="link">
+              Paragraph
+            </a>
 
-            <a href="#links"> Links </a>
+            <a href="#links" data-tab="links" class="link"> Links </a>
 
-            <a href="#images"> Images </a>
+            <a href="#images" data-tab="images" class="link"> Images </a>
 
-            <a href="#lists"> Lists </a>
+            <a href="#lists" data-tab="lists" class="link"> Lists </a>
 
-            <a href="#tables"> Tables </a>
+            <a href="#tables" data-tab="tables" class="link"> Tables </a>
 
-            <a href="#forms"> Forms </a>
+            <a href="#forms" data-tab="forms" class="link"> Forms </a>
 
-            <a href="#semantic"> Semantic Tags </a>
+            <a href="#semantic" data-tab="semantic" class="link">
+              Semantic Tags
+            </a>
           </nav>
         </aside>
       </div>
       <!-- Left Side Bar End -->
-      <div class="rightSideContent">
-        <h1>This is main-container</h1>
+
+      <div class="content-container">
+        <div class="top">
+          <h1>HTML5 Developer Notes</h1>
+        </div>
+        <!-- MAIN CONTENT -->
+        <section id="boilerplate" class="content show">
+          <div class="info-box">
+            <div class="info">
+              <h2>HTML Boilerplate</h2>
+              <p>
+                HTML Boilerplate ek basic structure hota hai jo har HTML webpage
+                banane ke liye use kiya jata hai. Isme webpage ke important tags
+                hote hain jaise:
+              </p>
+            </div>
+
+            <!-- Description -->
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>&lt;!DOCTYPE html&gt;</strong> - Browser ko batata hai
+                  ki document HTML5 hai.
+                </li>
+
+                <li>
+                  <strong>&lt;html&gt;</strong> - Pure webpage ka root element
+                  hota hai.
+                </li>
+
+                <li>
+                  <strong>&lt;head&gt;</strong> - Isme webpage ki information
+                  hoti hai jaise title, meta tags, CSS links etc.
+                </li>
+
+                <li>
+                  <strong>&lt;meta charset="UTF-8"&gt;</strong> - Different
+                  languages aur symbols support karta hai.
+                </li>
+
+                <li>
+                  <strong>&lt;meta name="viewport"&gt;</strong> - Website ko
+                  mobile responsive banata hai.
+                </li>
+
+                <li>
+                  <strong>&lt;title&gt;</strong> - Browser tab me webpage ka
+                  naam show karta hai.
+                </li>
+
+                <li>
+                  <strong>&lt;body&gt;</strong> - Webpage ka visible content
+                  yahan likha jata hai.
+                </li>
+              </ul>
+
+              <p>
+                Har HTML project ki shuruaat isi basic structure se hoti hai.
+              </p>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+          <div class="note-box">
+<pre>
+    <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+
+      &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;meta name="viewport"
+                content="width=device-width, initial-scale=1.0"&gt;
+
+          &lt;title&gt;Document&lt;/title&gt;
+      &lt;/head&gt;
+
+    &lt;body&gt;
+
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+                </code>
+            </pre>
+          </div>
+        </section>
+        <section id="headings" class="content">Headings</section>
+        <section id="paragraph" class="content">paragraph</section>
+        <section id="links" class="content">links</section>
+        <section id="images" class="content">images</section>
+        <section id="lists" class="content">lists</section>
+        <section id="tables" class="content">tables</section>
+        <section id="forms" class="content">forms</section>
+        <section id="semantic" class="content">semantic</section>
       </div>
     </div>
+
+    <script src="script-notes.js"></script>
   </body>
 </html>
