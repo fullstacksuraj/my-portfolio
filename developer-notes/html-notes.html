@@ -17,10 +17,22 @@
     />
   </head>
   <body>
+    <!-- ========================= -->
+    <!-- MAIN CONTAINER START -->
+    <!-- ========================= -->
+
     <div class="main-container">
+      <!-- ========================= -->
+      <!-- LEFT SIDEBAR START -->
+      <!-- ========================= -->
+
       <div class="leftSideBar">
+        <!-- Sidebar -->
         <aside class="sidebar">
+          <!-- Logo -->
           <h2 class="logo">HTML5 Docs</h2>
+
+          <!-- Navigation -->
           <nav>
             <a href="#boilerplate" data-tab="boilerplate" class="link active">
               Boilerplate
@@ -48,21 +60,141 @@
           </nav>
         </aside>
       </div>
-      <!-- Left Side Bar End -->
+
+      <!-- ========================= -->
+      <!-- LEFT SIDEBAR END -->
+      <!-- ========================= -->
+
+      <!-- ========================= -->
+      <!-- CONTENT CONTAINER START -->
+      <!-- ========================= -->
 
       <div class="content-container">
+        <!-- ========================= -->
+        <!-- TOP HEADER -->
+        <!-- ========================= -->
+
         <div class="top">
           <h1>HTML5 Developer Notes</h1>
         </div>
-        <!-- MAIN CONTENT -->
+
+        <!-- ========================= -->
+        <!-- HTML BOILERPLATE -->
+        <!-- ========================= -->
+
         <section id="boilerplate" class="content show">
+          <!-- Info Box -->
           <div class="info-box">
+            <!-- Heading + Intro -->
             <div class="info">
               <h2>HTML Boilerplate</h2>
+
               <p>
                 HTML Boilerplate ek basic structure hota hai jo har HTML webpage
-                banane ke liye use kiya jata hai. Isme webpage ke important tags
-                hote hain jaise:
+                banane ke liye use kiya jata hai.
+              </p>
+            </div>
+
+            <!-- Description Box -->
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>&lt;!DOCTYPE html&gt;</strong>
+                  - Browser ko batata hai ki document HTML5 hai.
+                </li>
+
+                <li>
+                  <strong>&lt;html&gt;</strong>
+                  - Pure webpage ka root element hota hai.
+                </li>
+
+                <li>
+                  <strong>&lt;head&gt;</strong>
+                  - Isme webpage ki information hoti hai.
+                </li>
+
+                <li>
+                  <strong>&lt;body&gt;</strong>
+                  - Visible webpage content yahan likha jata hai.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+          <div class="note-box">
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+          </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- HEADING TAGS -->
+        <!-- ========================= -->
+
+        <section id="headings" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Heading Tags</h2>
+
+              <p>HTML me headings webpage structure ke liye use hoti hain.</p>
+            </div>
+
+            <!-- Description -->
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>&lt;h1&gt;</strong>
+                  - Sabse important heading.
+                </li>
+
+                <li>
+                  <strong>&lt;h2&gt;</strong>
+                  - Secondary heading.
+                </li>
+
+                <li>
+                  <strong>&lt;h3&gt;</strong>
+                  - Subheading ke liye use hota hai.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+          <div class="note-box">
+            <pre><code>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+</code></pre>
+          </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- PARAGRAPH -->
+        <!-- ========================= -->
+
+        <section id="paragraph" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Paragraph Tag</h2>
+
+              <p>
+                Paragraph tag webpage me text content likhne ke liye use hota
+                hai.
               </p>
             </div>
 
@@ -70,81 +202,317 @@
             <div class="description-box">
               <ul>
                 <li>
-                  <strong>&lt;!DOCTYPE html&gt;</strong> - Browser ko batata hai
-                  ki document HTML5 hai.
+                  <strong>&lt;p&gt;</strong>
+                  - Paragraph create karta hai.
                 </li>
 
-                <li>
-                  <strong>&lt;html&gt;</strong> - Pure webpage ka root element
-                  hota hai.
-                </li>
-
-                <li>
-                  <strong>&lt;head&gt;</strong> - Isme webpage ki information
-                  hoti hai jaise title, meta tags, CSS links etc.
-                </li>
-
-                <li>
-                  <strong>&lt;meta charset="UTF-8"&gt;</strong> - Different
-                  languages aur symbols support karta hai.
-                </li>
-
-                <li>
-                  <strong>&lt;meta name="viewport"&gt;</strong> - Website ko
-                  mobile responsive banata hai.
-                </li>
-
-                <li>
-                  <strong>&lt;title&gt;</strong> - Browser tab me webpage ka
-                  naam show karta hai.
-                </li>
-
-                <li>
-                  <strong>&lt;body&gt;</strong> - Webpage ka visible content
-                  yahan likha jata hai.
-                </li>
+                <li>Browser automatically spacing deta hai.</li>
               </ul>
-
-              <p>
-                Har HTML project ki shuruaat isi basic structure se hoti hai.
-              </p>
             </div>
           </div>
 
           <!-- Code Box -->
           <div class="note-box">
-<pre>
-    <code>
-    &lt;!DOCTYPE html&gt;
-    &lt;html lang="en"&gt;
-
-      &lt;head&gt;
-          &lt;meta charset="UTF-8"&gt;
-          &lt;meta name="viewport"
-                content="width=device-width, initial-scale=1.0"&gt;
-
-          &lt;title&gt;Document&lt;/title&gt;
-      &lt;/head&gt;
-
-    &lt;body&gt;
-
-    &lt;/body&gt;
-
-    &lt;/html&gt;
-                </code>
-            </pre>
+            <pre><code>
+&lt;p&gt;
+This is a paragraph.
+&lt;/p&gt;
+</code></pre>
           </div>
         </section>
-        <section id="headings" class="content">Headings</section>
-        <section id="paragraph" class="content">paragraph</section>
-        <section id="links" class="content">links</section>
-        <section id="images" class="content">images</section>
-        <section id="lists" class="content">lists</section>
-        <section id="tables" class="content">tables</section>
-        <section id="forms" class="content">forms</section>
-        <section id="semantic" class="content">semantic</section>
+
+        <!-- ========================= -->
+        <!-- LINKS -->
+        <!-- ========================= -->
+
+        <section id="links" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Anchor Tag</h2>
+
+              <p>Anchor tag links create karne ke liye use hota hai.</p>
+            </div>
+
+            <!-- Description -->
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>&lt;a&gt;</strong>
+                  - Link create karta hai.
+                </li>
+
+                <li>
+                  <strong>href</strong>
+                  - Destination URL specify karta hai.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+          <div class="note-box">
+            <pre><code>
+&lt;a href="https://google.com"&gt;
+Google
+&lt;/a&gt;
+</code></pre>
+          </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- IMAGES -->
+        <!-- ========================= -->
+
+        <section id="images" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Image Tag</h2>
+
+              <p>Images webpage par show karne ke liye img tag use hota hai.</p>
+            </div>
+
+            <!-- Description -->
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>src</strong>
+                  - Image path define karta hai.
+                </li>
+
+                <li>
+                  <strong>alt</strong>
+                  - Alternative text show karta hai.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+          <div class="note-box">
+            <pre><code>
+&lt;img src="image.jpg"
+alt="image"&gt;
+</code></pre>
+          </div>
+        </section>
+        <section id="lists" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Lists</h2>
+              <p>
+                HTML me multiple items ko organize karne ke liye lists use ki
+                jati hain. Mainly do types ki lists hoti hain:
+                <strong>Unordered List</strong> aur
+                <strong>Ordered List</strong>.
+              </p>
+            </div>
+            <!-- Description -->
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>&lt;ul&gt;</strong> - Unordered list create karta hai.
+                </li>
+                <li>
+                  <strong>&lt;ol&gt;</strong> - Ordered (numbered) list create
+                  karta hai.
+                </li>
+                <li>
+                  <strong>&lt;li&gt;</strong> - List item define karta hai.
+                </li>
+                <li>
+                  Lists menus, navigation aur grouped content dikhane ke liye
+                  use hoti hain.
+                </li>
+              </ul>
+              <p>
+                HTML lists webpage content ko clean aur organized banati hain.
+              </p>
+            </div>
+          </div>
+          <!-- Code Box -->
+          <div class="note-box">
+            <pre><code> 
+&lt;ul&gt; 
+  &lt;li&gt;
+    HTML
+    &lt;/li&gt; 
+    &lt;li&gt;
+    CSS
+    &lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;ol&gt; 
+  &lt;li&gt;
+    JavaScript
+  &lt;/li&gt; 
+  &lt;li&gt;
+    React
+  &lt;/li&gt; 
+&lt;/ol&gt; </code></pre>
+          </div>
+        </section>
+        <section id="tables" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Tables</h2>
+              <p>
+                HTML me data ko rows aur columns me show karne ke liye
+                <strong>&lt;table&gt;</strong> tag use hota hai.
+              </p>
+            </div>
+            <!-- Description -->
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>&lt;table&gt;</strong> - Table create karta hai.
+                </li>
+                <li>
+                  <strong>&lt;tr&gt;</strong> - Table row define karta hai.
+                </li>
+                <li>
+                  <strong>&lt;th&gt;</strong> - Table heading define karta hai.
+                </li>
+                <li>
+                  <strong>&lt;td&gt;</strong> - Table data cell define karta
+                  hai.
+                </li>
+              </ul>
+              <p>
+                Tables student data, pricing charts aur reports dikhane ke liye
+                use hote hain.
+              </p>
+            </div>
+          </div>
+          <!-- Code Box -->
+          <div class="note-box">
+            <pre><code> 
+&lt;table&gt; 
+  &lt;tr&gt; 
+    &lt;th&gt;
+      Name
+    &lt;/th&gt; 
+    &lt;th&gt;
+      Age
+    &lt;/th&gt; 
+  &lt;/tr&gt; 
+  &lt;tr&gt; 
+    &lt;td&gt;
+      Suraj
+    &lt;/td&gt; 
+    &lt;td&gt;
+      25
+    &lt;/td&gt; 
+  &lt;/tr&gt; 
+&lt;/table&gt; </code></pre>
+          </div>
+        </section>
+        <section id="forms" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Forms</h2>
+              <p>
+                HTML forms user se input lene ke liye use kiye jate hain. Login,
+                signup aur contact forms isi ka example hain.
+              </p>
+            </div>
+            <!-- Description -->
+            <div class="description-box">
+              <ul>
+                <li><strong>&lt;form&gt;</strong> - Form create karta hai.</li>
+                <li>
+                  <strong>&lt;input&gt;</strong> - User input field create karta
+                  hai.
+                </li>
+                <li>
+                  <strong>placeholder</strong> - Input field me hint text show
+                  karta hai.
+                </li>
+                <li>
+                  <strong>&lt;button&gt;</strong> - Form submit karne ke liye
+                  use hota hai.
+                </li>
+              </ul>
+              <p>
+                Forms websites par user interaction ke liye bahut important hote
+                hain.
+              </p>
+            </div>
+          </div>
+          <!-- Code Box -->
+          <div class="note-box">
+            <pre><code> 
+&lt;form&gt; 
+&lt;input type="text" placeholder="Enter Name"&gt; 
+&lt;button&gt; 
+Submit &lt;
+/button&gt; 
+&lt;/form&gt; </code></pre>
+          </div>
+        </section>
+        <section id="semantic" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Semantic Tags</h2>
+              <p>
+                Semantic tags webpage ke different sections ka meaning clearly
+                define karte hain. Yeh SEO aur accessibility dono improve karte
+                hain.
+              </p>
+            </div>
+            <!-- Description -->
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>&lt;header&gt;</strong> - Website ka top section
+                  define karta hai.
+                </li>
+                <li>
+                  <strong>&lt;nav&gt;</strong> - Navigation links ke liye use
+                  hota hai.
+                </li>
+                <li>
+                  <strong>&lt;main&gt;</strong> - Main content area define karta
+                  hai.
+                </li>
+                <li>
+                  <strong>&lt;section&gt;</strong> - Different webpage sections
+                  banata hai.
+                </li>
+                <li>
+                  <strong>&lt;article&gt;</strong> - Independent content define
+                  karta hai.
+                </li>
+                <li>
+                  <strong>&lt;footer&gt;</strong> - Website ka bottom section
+                  define karta hai.
+                </li>
+              </ul>
+              <p>
+                Semantic tags clean structure aur better SEO ke liye bahut
+                important hote hain.
+              </p>
+            </div>
+          </div>
+          <!-- Code Box -->
+          <div class="note-box">
+            <pre><code>
+ &lt;header&gt;&lt;/header&gt; 
+ &lt;nav&gt;&lt;/nav&gt; 
+ &lt;main&gt;&lt;/main&gt; 
+ &lt;section&gt;&lt;/section&gt; 
+ &lt;article&gt;&lt;/article&gt; 
+ &lt;footer&gt;&lt;/footer&gt; </code></pre>
+          </div>
+        </section>
       </div>
+
+      <!-- ========================= -->
+      <!-- CONTENT CONTAINER END -->
+      <!-- ========================= -->
     </div>
+
+    <!-- ========================= -->
+    <!-- MAIN CONTAINER END -->
+    <!-- ========================= -->
 
     <script src="script-notes.js"></script>
   </body>
