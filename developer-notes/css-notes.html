@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITLE -->
+    <title>CSS3 Notes | Suraj Docs</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./notes-css/style.css" />
+    <link rel="stylesheet" href="./notes-css/css-notes.css" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- SIDEBAR -->
+      <aside class="leftSidebar">
+        <div class="logo">CSS3 Docs</div>
+        <nav>
+          <a href="#selectors" data-tab="selectors" class="links active">
+            Selectors
+          </a>
+          <a href="#colors" data-tab="colors" class="links"> Colors </a>
+          <a href="#boxmodel" data-tab="boxmodel" class="links"> Box Model </a>
+          <a href="#flexbox" data-tab="flexbox" class="links"> Flexbox </a>
+          <a href="#grid" data-tab="grid" class="links"> CSS Grid </a>
+          <a href="#position" data-tab="position" class="links"> Position </a>
+          <a href="#animation" data-tab="animation" class="links">
+            Animation
+          </a>
+          <a href="#mediaquery" data-tab="mediaquery" class="links">
+            Media Query
+          </a>
+          <a href="#variables" data-tab="variables" class="links">Variables </a>
+        </nav>
+      </aside>
+      <aside class="rightSidebar">
+        <div class="top">
+          <h1>CSS3 Developer Notes</h1>
+          <p>
+            Complete CSS3 notes with examples, layouts,
+            animations, flexbox, grid, responsive design and modern UI concepts.
+          </p>
+        </div>
+        <section id="selectors" class="content show">
+          <div class="info-box">
+            <div class="info">
+              <h2>CSS Selectors</h2>
+              <p>
+                CSS Selectors ka use HTML elements ko target karne ke liye hota
+                hai taki un par styling apply ki ja sake.
+              </p>
+            </div>
+            <!-- Description -->
+
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>Element Selector</strong>
+                  - HTML tag name ko target karta hai.
+                </li>
+
+                <li>
+                  <strong>Class Selector</strong>
+                  - Class name ko target karta hai aur
+                  <strong>.</strong> se start hota hai.
+                </li>
+
+                <li>
+                  <strong>ID Selector</strong>
+                  - Unique element ko target karta hai aur
+                  <strong>#</strong> se start hota hai.
+                </li>
+
+                <li>
+                  Selectors webpage ke different elements ko customize karne me
+                  help karte hain.
+                </li>
+              </ul>
+
+              <p>
+                CSS selectors web designing ka basic foundation hote hain aur
+                styling control karne ke liye bahut important hote hain.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="colors" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Colors</h2>
+
+              <p>
+                CSS me colors ka use webpage ke text, background aur elements ko
+                attractive banane ke liye kiya jata hai.
+              </p>
+            </div>
+
+            <!-- Description -->
+
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>color</strong>
+                  - Text ka color change karta hai.
+                </li>
+
+                <li>
+                  <strong>background</strong>
+                  ya
+                  <strong>background-color</strong>
+                  - Element ka background color set karta hai.
+                </li>
+
+                <li>
+                  CSS me colors ko
+                  <strong>name</strong>, <strong>HEX</strong>,
+                  <strong>RGB</strong>
+                  aur
+                  <strong>HSL</strong>
+                  format me likh sakte hain.
+                </li>
+
+                <li>
+                  Proper color combination webpage ko professional aur readable
+                  banata hai.
+                </li>
+              </ul>
+
+              <p>
+                Web design me colors user experience aur visual appearance ke
+                liye bahut important hote hain.
+              </p>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+
+          <div class="note-box">
+            <pre><code>
+
+/* COLOR USING NAME */
+p{
+  color:red;
+}
+
+/* COLOR USING HEX */
+h2{
+  color:#7cf03d;
+}
+
+/* COLOR USING RGB */
+h3{
+  color:rgb(124,240,61);
+}
+
+/* COLOR USING HSL */
+h4{
+  color:hsl(96, 86%, 59%);
+}
+
+/* PROFESSIONAL COLOR COMBINATION */
+.card{
+  background:#1f2937;
+  color:#ffffff;
+  border:1px solid #7cf03d;
+}
+
+</code></pre>
+          </div>
+        </section>
+        <section id="boxmodel" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Box Model</h2>
+
+              <p>
+                CSS Box Model webpage ke har element ka structure define karta
+                hai. Har HTML element ek box ki tarah behave karta hai.
+              </p>
+            </div>
+
+            <!-- Description -->
+
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>margin</strong>
+                  - Element ke bahar ki spacing set karta hai.
+                </li>
+
+                <li>
+                  <strong>padding</strong>
+                  - Content aur border ke beech ki spacing set karta hai.
+                </li>
+
+                <li>
+                  <strong>border</strong>
+                  - Element ke around border create karta hai.
+                </li>
+
+                <li>
+                  <strong>box-sizing: border-box</strong>
+                  - Width aur height calculation ko easy banata hai.
+                </li>
+
+                <li>
+                  Box Model webpage layout aur spacing control karne ke liye
+                  bahut important hota hai.
+                </li>
+              </ul>
+
+              <p>
+                Modern websites me layout aur responsive design banane ke liye
+                Box Model ka concept samajhna bahut zaroori hai.
+              </p>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+
+          <div class="note-box">
+            <pre><code>
+
+/* RESET DEFAULT SPACING */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* BOX MODEL EXAMPLE */
+
+.box{
+  width:300px;
+
+  padding:20px;
+
+  border:5px solid #7cf03d;
+
+  margin:30px;
+
+  background:#1f2937;
+
+  color:white;
+}
+
+</code></pre>
+          </div>
+        </section>
+        <section id="flexbox" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Flexbox</h2>
+
+              <p>
+                Flexbox ek powerful CSS layout system hai jo elements ko easily
+                align, distribute aur responsive banane me help karta hai.
+              </p>
+            </div>
+
+            <!-- Description -->
+
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>display: flex</strong>
+                  - Element ko flex container banata hai.
+                </li>
+
+                <li>
+                  <strong>justify-content</strong>
+                  - Horizontal alignment control karta hai.
+                </li>
+
+                <li>
+                  <strong>align-items</strong>
+                  - Vertical alignment control karta hai.
+                </li>
+
+                <li>
+                  <strong>flex-direction</strong>
+                  - Items ki direction set karta hai.
+                </li>
+
+                <li>
+                  <strong>flex-wrap</strong>
+                  - Items ko next line me wrap karne deta hai.
+                </li>
+
+                <li>
+                  <strong>gap</strong>
+                  - Flex items ke beech spacing deta hai.
+                </li>
+
+                <li>
+                  <strong>align-content</strong>
+                  - Multiple rows ki alignment control karta hai.
+                </li>
+
+                <li>
+                  <strong>flex-grow</strong>
+                  - Extra space occupy karne deta hai.
+                </li>
+
+                <li>
+                  <strong>flex-shrink</strong>
+                  - Element ko shrink hone control karta hai.
+                </li>
+
+                <li>
+                  <strong>flex-basis</strong>
+                  - Initial size define karta hai.
+                </li>
+              </ul>
+
+              <p>
+                Modern responsive layouts aur professional UI design banane ke
+                liye Flexbox bahut important hota hai.
+              </p>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+
+          <div class="note-box">
+            <pre><code>
+
+/* FLEX CONTAINER */
+
+.container{
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:2rem;
+}
+
+/* FLEX DIRECTION */
+
+.container{
+  flex-direction:row;
+}
+
+/* FLEX WRAP */
+
+.container{
+  flex-wrap:wrap;
+}
+
+/* JUSTIFY CONTENT */
+
+.container{
+  justify-content:space-between;
+}
+
+/* ALIGN ITEMS */
+
+.container{
+  align-items:center;
+}
+
+/* ALIGN CONTENT */
+
+.container{
+  align-content:center;
+}
+
+/* FLEX GROW */
+
+.box{
+  flex-grow:1;
+}
+
+/* FLEX SHRINK */
+
+.box{
+  flex-shrink:1;
+}
+
+/* FLEX BASIS */
+
+.box{
+  flex-basis:200px;
+}
+
+</code></pre>
+          </div>
+        </section>
+        <section id="grid" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>CSS Grid</h2>
+
+              <p>
+                CSS Grid ek powerful 2D layout system hai jo rows aur columns ki
+                help se responsive layouts banane ke liye use hota hai.
+              </p>
+            </div>
+
+            <!-- Description -->
+
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>display: grid</strong>
+                  - Element ko grid container banata hai.
+                </li>
+
+                <li>
+                  <strong>grid-template-columns</strong>
+                  - Columns ka size aur number define karta hai.
+                </li>
+
+                <li>
+                  <strong>grid-template-rows</strong>
+                  - Rows ka size define karta hai.
+                </li>
+
+                <li>
+                  <strong>repeat()</strong>
+                  - Repeated values ko short way me likhne ke liye use hota hai.
+                </li>
+
+                <li>
+                  <strong>fr</strong>
+                  - Available space ko equally divide karta hai.
+                </li>
+
+                <li>
+                  <strong>gap</strong>
+                  - Grid items ke beech spacing deta hai.
+                </li>
+
+                <li>
+                  <strong>justify-items</strong>
+                  - Horizontal alignment control karta hai.
+                </li>
+
+                <li>
+                  <strong>align-items</strong>
+                  - Vertical alignment control karta hai.
+                </li>
+
+                <li>
+                  <strong>place-items</strong>
+                  - Horizontal aur vertical alignment ek sath set karta hai.
+                </li>
+              </ul>
+
+              <p>
+                Modern responsive websites aur dashboard layouts banane ke liye
+                CSS Grid bahut important hota hai.
+              </p>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+
+          <div class="note-box">
+            <pre><code>
+
+/* GRID CONTAINER */
+
+.container{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(3,1fr);
+
+  gap:2rem;
+}
+
+/* GRID ROWS */
+
+.container{
+  grid-template-rows:
+  200px 200px;
+}
+
+/* REPEAT FUNCTION */
+
+.container{
+  grid-template-columns:
+  repeat(4,1fr);
+}
+
+/* JUSTIFY ITEMS */
+
+.container{
+  justify-items:center;
+}
+
+/* ALIGN ITEMS */
+
+.container{
+  align-items:center;
+}
+
+/* PLACE ITEMS */
+
+.container{
+  place-items:center;
+}
+
+</code></pre>
+          </div>
+        </section>
+        <section id="position" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Position</h2>
+
+              <p>
+                CSS me <strong>position</strong> property ka use elements ki
+                location control karne ke liye hota hai.
+              </p>
+            </div>
+
+            <!-- Description -->
+
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>static</strong>
+                  - Default position hoti hai.
+                </li>
+
+                <li>
+                  <strong>relative</strong>
+                  - Element apni original position ke according move hota hai.
+                </li>
+
+                <li>
+                  <strong>absolute</strong>
+                  - Element nearest positioned parent ke according move hota
+                  hai.
+                </li>
+
+                <li>
+                  <strong>fixed</strong>
+                  - Element screen par fixed rehta hai.
+                </li>
+
+                <li>
+                  <strong>sticky</strong>
+                  - Scroll karne par specific position par stick ho jata hai.
+                </li>
+
+                <li>
+                  <strong>top</strong>, <strong>right</strong>,
+                  <strong>bottom</strong>,
+                  <strong>left</strong>
+                  properties positioning control karti hain.
+                </li>
+              </ul>
+
+              <p>
+                Navigation bars, floating buttons aur custom layouts banane ke
+                liye position property bahut important hoti hai.
+              </p>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+
+          <div class="note-box">
+            <pre><code>
+
+/* RELATIVE POSITION */
+
+.box{
+  position:relative;
+
+  top:20px;
+
+  left:20px;
+}
+
+/* ABSOLUTE POSITION */
+
+.box{
+  position:absolute;
+
+  top:0;
+
+  left:0;
+}
+
+/* FIXED POSITION */
+
+.navbar{
+  position:fixed;
+
+  top:0;
+
+  width:100%;
+}
+
+/* STICKY POSITION */
+
+.header{
+  position:sticky;
+
+  top:0;
+}
+
+</code></pre>
+          </div>
+        </section>
+        <section id="animation" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Animation</h2>
+
+              <p>
+                CSS Animation ka use webpage elements ko move, fade, rotate aur
+                attractive effects dene ke liye kiya jata hai.
+              </p>
+            </div>
+
+            <!-- Description -->
+
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>animation-name</strong>
+                  - Animation ka naam define karta hai.
+                </li>
+
+                <li>
+                  <strong>animation-duration</strong>
+                  - Animation kitne time tak chalegi define karta hai.
+                </li>
+
+                <li>
+                  <strong>animation-iteration-count</strong>
+                  - Animation kitni baar chalegi define karta hai.
+                </li>
+
+                <li>
+                  <strong>animation-delay</strong>
+                  - Animation start hone se pehle delay deta hai.
+                </li>
+
+                <li>
+                  <strong>animation-direction</strong>
+                  - Animation ki direction control karta hai.
+                </li>
+
+                <li>
+                  <strong>animation-timing-function</strong>
+                  - Animation ki speed curve control karta hai.
+                </li>
+
+                <li>
+                  <strong>@keyframes</strong>
+                  - Animation ke steps define karta hai.
+                </li>
+
+                <li>
+                  <strong>transform</strong>
+                  - Element ko move, rotate, scale ya skew karta hai.
+                </li>
+              </ul>
+
+              <p>
+                Modern UI aur interactive websites banane ke liye CSS animations
+                bahut useful hote hain.
+              </p>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+
+          <div class="note-box">
+            <pre><code>
+
+/* BASIC ANIMATION */
+
+.box{
+
+  animation:move 2s infinite;
+}
+
+/* KEYFRAMES */
+
+@keyframes move{
+
+  0%{
+    transform:translateX(0);
+  }
+
+  100%{
+    transform:translateX(100px);
+  }
+
+}
+
+/* ANIMATION DURATION */
+
+.box{
+  animation-duration:2s;
+}
+
+/* ANIMATION DELAY */
+
+.box{
+  animation-delay:1s;
+}
+
+/* ITERATION COUNT */
+
+.box{
+  animation-iteration-count:infinite;
+}
+
+/* ANIMATION DIRECTION */
+
+.box{
+  animation-direction:alternate;
+}
+
+/* TIMING FUNCTION */
+
+.box{
+  animation-timing-function:ease-in-out;
+}
+
+/* ROTATE EXAMPLE */
+
+.box:hover{
+  transform:rotate(45deg);
+}
+
+/* SCALE EXAMPLE */
+
+.box:hover{
+  transform:scale(1.2);
+}
+
+</code></pre>
+          </div>
+        </section>
+        <section id="mediaquery" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>Media Query</h2>
+
+              <p>
+                Media Query ka use responsive website banane ke liye kiya jata
+                hai. Isse different screen sizes ke according styling change ki
+                ja sakti hai.
+              </p>
+            </div>
+
+            <!-- Description -->
+
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>@media</strong>
+                  - Different devices aur screen sizes ko target karta hai.
+                </li>
+
+                <li>
+                  <strong>max-width</strong>
+                  - Specific width se choti screen par styles apply karta hai.
+                </li>
+
+                <li>
+                  <strong>min-width</strong>
+                  - Specific width se badi screen par styles apply karta hai.
+                </li>
+
+                <li>
+                  Responsive design mobile, tablet aur desktop ke liye important
+                  hota hai.
+                </li>
+
+                <li>
+                  Media Queries website ko har device par properly visible
+                  banati hain.
+                </li>
+              </ul>
+
+              <p>
+                Modern web development me responsive design banane ke liye Media
+                Queries bahut important hoti hain.
+              </p>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+
+          <div class="note-box">
+            <pre><code>
+
+/* MOBILE DEVICES */
+
+@media(max-width:768px){
+
+  h1{
+    font-size:3rem;
+  }
+
+}
+
+/* TABLET DEVICES */
+
+@media(max-width:992px){
+
+  .container{
+    flex-direction:column;
+  }
+
+}
+
+/* LARGE SCREENS */
+
+@media(min-width:1200px){
+
+  body{
+    background:#111;
+  }
+
+}
+
+</code></pre>
+          </div>
+        </section>
+        <section id="variables" class="content">
+          <div class="info-box">
+            <div class="info">
+              <h2>CSS Variables</h2>
+
+              <p>
+                CSS Variables ka use reusable values store karne ke liye hota
+                hai. Inhe Custom Properties bhi kaha jata hai.
+              </p>
+            </div>
+
+            <!-- Description -->
+
+            <div class="description-box">
+              <ul>
+                <li>
+                  <strong>:root</strong>
+                  - Global variables define karne ke liye use hota hai.
+                </li>
+
+                <li>
+                  <strong>--variable-name</strong>
+                  - CSS variable create karta hai.
+                </li>
+
+                <li>
+                  <strong>var()</strong>
+                  - Variable ki value use karne ke liye use hota hai.
+                </li>
+
+                <li>
+                  CSS Variables se code reusable aur maintainable banta hai.
+                </li>
+
+                <li>
+                  Theme colors aur common spacing manage karne ke liye variables
+                  bahut useful hote hain.
+                </li>
+              </ul>
+
+              <p>
+                Modern websites me dark mode, themes aur reusable styling ke
+                liye CSS Variables ka bahut use hota hai.
+              </p>
+            </div>
+          </div>
+
+          <!-- Code Box -->
+
+          <div class="note-box">
+            <pre><code>
+
+/* GLOBAL VARIABLES */
+
+:root{
+
+  --green:#7cf03d;
+
+  --bg-color:#0d1117;
+
+  --text-color:#ffffff;
+
+  --card-bg:#1f2937;
+}
+
+/* USING VARIABLES */
+
+body{
+
+  background:var(--bg-color);
+
+  color:var(--text-color);
+}
+
+h1{
+
+  color:var(--green);
+}
+
+.card{
+
+  background:var(--card-bg);
+
+  border:1px solid var(--green);
+}
+
+</code></pre>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <script>
+      let links = document.querySelectorAll(".links");
+      let content = document.querySelectorAll(".content");
+
+      links.forEach((navLink) => {
+        navLink.addEventListener("click", () => {
+          links.forEach((a) => {
+            a.classList.remove("active");
+          });
+          navLink.classList.add("active");
+
+          let contentSec = navLink.getAttribute("data-tab");
+          content.forEach((secTab) => {
+            if (secTab.id === contentSec) {
+              secTab.classList.add("show");
+            } else {
+              secTab.classList.remove("show");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
